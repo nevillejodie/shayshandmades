@@ -1,3 +1,6 @@
+import React from 'react'
+import ww from '../images/wickedywax.jpeg'
+
 export default function Home() {
-    return <h2>Home</h2>;
+    return (<img height="100px" src={ww}/>);
   }

@@ -1,0 +1,22 @@
+.container {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.icons {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+   
+}
+
+.icons img:hover{
+    opacity: 0.5;
+}
+
+
+
