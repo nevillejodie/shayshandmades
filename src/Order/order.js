@@ -9,10 +9,10 @@ export default function Order() {
     <h2>Use one of the following channels to place your order. Please provide the product reference number, quantity, and delivery address.</h2>
     </div>
     <div className="icons">
-    <div><img className="icons1" height="100px" src={insta}/></div>
-    <div><img className="icons2" height="125px" src={facebook}/></div>
-    <div><img className="icons2" height="100px" src={email}/></div>
-    <h2>Thank you for choosing Wickedy Wax.</h2>
+    <div><a target="_blank" href="https://www.instagram.com/wickedywaxmelts/"><img className="icons1" height="100px" src={insta}/></a></div>
+    <div><a target="_blank" href="https://fb.me/WickedyWaxMelts"><img className="icons2" height="125px" src={facebook}/></a></div>
+    <div><a target="_blank" href="mailto:shannon.bethany@live.co.uk"><img className="icons2" height="100px" src={email}/></a> </div>
     </div>
+    <div className="header"><h2>Thank you for choosing Wickedy Wax.</h2></div>
     </div>);
   }
