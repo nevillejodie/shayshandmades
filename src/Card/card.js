@@ -41,13 +41,13 @@ export default function ImgMediaCard({alt, img, title, typography, description }
       </CardActionArea>
       <CardActions>
       <FacebookShareButton
-            url="www.google.com"
+            url="http://www.wickedywax.co.uk/"
             quote="Check out this beaut product from Wickey Wax!"
             className="Demo__some-network__share-button"
           >
             <FacebookIcon size={32} round />
           </FacebookShareButton>
-          <WhatsappShareButton   url="www.google.com"
+          <WhatsappShareButton   url="http://www.wickedywax.co.uk/"
             quote="Check out this beaut product from Wickey Wax!"
             className="Demo__some-network__share-button">
               <WhatsappIcon size={32} round />

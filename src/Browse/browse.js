@@ -7,7 +7,6 @@ import three from '../images/meltComfort.jpg'
 import four from '../images/boxIt.jpg'
 import five from '../images/five.jpg'
 import six from '../images/six.jpg'
-import {FacebookShareButton, FacebookIcon} from "react-share";
 
 export default function Browse() {
    
@@ -34,13 +33,7 @@ export default function Browse() {
             <Card img={five} typography="Vanilla" description="A mixed box of your favourite spice to get your home smelling nice."></Card>
           </Grid>
           <Grid item xs>
-            <Card img={six} typography="Fruit Bowl" description="Perfect for a burst of fruity-freshness!"><FacebookShareButton
-            url={shareUrl}
-            quote={title}
-            className="Demo__some-network__share-button"
-          >
-            <FacebookIcon size={32} round />
-          </FacebookShareButton></Card>
+            <Card img={six} typography="Fruit Bowl" description="Perfect for a burst of fruity-freshness!"></Card>
             
           </Grid>
         </Grid>
