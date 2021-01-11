@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+.container {
+    text-align: center;
+    margin-top: 5%
+}
+
+.container p {
+    font-weight: bold;
+    font-family: 'Nixie One', cursive;
+}
+

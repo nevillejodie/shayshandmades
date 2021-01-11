@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import {FacebookShareButton, FacebookIcon, WhatsappShareButton, WhatsappIcon} from "react-share";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,12 +40,18 @@ export default function ImgMediaCard({alt, img, title, typography, description }
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
+      <FacebookShareButton
+            url="www.google.com"
+            quote="Check out this beaut product from Wickey Wax!"
+            className="Demo__some-network__share-button"
+          >
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+          <WhatsappShareButton   url="www.google.com"
+            quote="Check out this beaut product from Wickey Wax!"
+            className="Demo__some-network__share-button">
+              <WhatsappIcon size={32} round />
+            </WhatsappShareButton>
       </CardActions>
     </Card>
   );

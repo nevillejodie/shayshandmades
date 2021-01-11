@@ -12,6 +12,10 @@
     padding: 10px; 
 }
 
+.header h2 {
+    font-family: 'Nixie One', cursive;
+}
+
 .icons {
     text-align: center;
     margin: auto;
@@ -22,6 +26,10 @@
 
 .icons img:hover{
     opacity: 0.5;
+}
+
+.container h2 {
+    font-family: 'Nixie One', cursive;
 }
 
 

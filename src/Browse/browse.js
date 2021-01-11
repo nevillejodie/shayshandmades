@@ -1,37 +1,47 @@
 import Card from '../Card/card'
 import Grid from "@material-ui/core/Grid";
 import React from 'react'
-import one from '../images/one.jpg'
-import two from '../images/two.jpg'
-import three from '../images/three.jpg'
-import four from '../images/four.jpg'
+import one from '../images/dino.jpg'
+import two from '../images/mixedpic.jpg'
+import three from '../images/meltComfort.jpg'
+import four from '../images/boxIt.jpg'
 import five from '../images/five.jpg'
 import six from '../images/six.jpg'
+import {FacebookShareButton, FacebookIcon} from "react-share";
 
 export default function Browse() {
    
+  const shareUrl = 'http://github.com';
+  const title = 'Look at this beaut product from Wickedy Wax!';
 
     return (<div styles={'margin-top: 30px'}>
         <Grid container spacing={2}>
           <Grid item xs>
-            <Card img={one} typography="1" description="description of item 1"></Card>
+            <Card img={one} typography="Dinosaurs" description="Big enough to cut into 2 or 3 pieces! 3x vanilla (gold) 1x avobath (green) 1x snow fairy (pink) 1x comforter (blue)"></Card>
           </Grid>
           <Grid item xs>
-            <Card img={two} typography="2" description="description of item 2"></Card>
+            <Card img={two} typography="Lush" description="This ready-made, Lush-inspired mixed box will have you feeling luscious in no time."></Card>
           </Grid>
           <Grid item xs>
-            <Card img={three} typography="3" description="description of item 3"></Card>
+            <Card img={three} typography="Spring Clean" description="This ready-made, Spring Clean mixed box will have the place feeling fresh without you lifting a finger."></Card>
           </Grid>
         </Grid>
         <Grid container spacing={2}>
           <Grid item xs>
-            <Card img={four} typography="4" description="description of item 4"></Card>
+            <Card img={four} typography="Jo Malone" description="This mixed box is inspired by British perfume and scented candle brand Jo Malone, but for a fraction of the price."></Card>
           </Grid>
           <Grid item xs>
-            <Card img={five} typography="5" description="description of item 5"></Card>
+            <Card img={five} typography="Vanilla" description="A mixed box of your favourite spice to get your home smelling nice."></Card>
           </Grid>
           <Grid item xs>
-            <Card img={six} typography="6" description="description of item 6"></Card>
+            <Card img={six} typography="Fruit Bowl" description="Perfect for a burst of fruity-freshness!"><FacebookShareButton
+            url={shareUrl}
+            quote={title}
+            className="Demo__some-network__share-button"
+          >
+            <FacebookIcon size={32} round />
+          </FacebookShareButton></Card>
+            
           </Grid>
         </Grid>
       </div>
