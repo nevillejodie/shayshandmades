@@ -1,12 +1,12 @@
 import Card from '../Card/card'
 import Grid from "@material-ui/core/Grid";
 import React from 'react'
-import one from '../images/dino.jpg'
-import two from '../images/mixedpic.jpg'
-import three from '../images/meltComfort.jpg'
-import four from '../images/boxIt.jpg'
-import five from '../images/five.jpg'
-import six from '../images/six.jpg'
+import one from '../images/1.jpg'
+import two from '../images/2.jpg'
+import three from '../images/3.jpg'
+import four from '../images/4.jpg'
+import five from '../images/1.jpg'
+import six from '../images/2.jpg'
 
 export default function Browse() {
    

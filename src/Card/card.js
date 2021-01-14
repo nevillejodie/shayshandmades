@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -19,6 +19,32 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ImgMediaCard({alt, img, title, typography, description }) {
   const classes = useStyles();
+  const [items, setItems] = useState([{ itemName: "item", quantity: 1, isSelected: false },
+  ]);
+     
+
+  const [totalItemCount, setTotalItemCount] = useState(6);
+
+  const handleAddButtonClick = () => {
+		const newItem = {
+			itemName: {typography},
+			quantity: 1,
+			isSelected: false,
+        };
+        
+        const newItems = [...items, newItem];
+
+		setItems(newItems);
+		calculateTotal();
+    };
+
+    const calculateTotal = () => {
+      const totalItemCount = items.reduce((total, item) => {
+        return total + item.quantity;
+      }, 0);
+  
+      setTotalItemCount(totalItemCount);
+    };
 
   return (
     <Card className={classes.root}>
@@ -52,6 +78,7 @@ export default function ImgMediaCard({alt, img, title, typography, description }
             className="Demo__some-network__share-button">
               <WhatsappIcon size={32} round />
             </WhatsappShareButton>
+            <button onClick={() => handleAddButtonClick()}>Add to Basket</button>
       </CardActions>
     </Card>
   );
