@@ -1,10 +1,10 @@
 import React, { createContext, useState } from 'react';
-import { dummyProducts } from '../services/dummy';
+import { ProductList } from '../services/dummy';
 export const ProductsContext = createContext()
 
 const ProductsContextProvider = ({children}) => {
 
-    const [products] = useState(dummyProducts);
+    const [products] = useState(ProductList);
 
     return ( 
         <ProductsContext.Provider value={{products}} >

@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import Layout from '../../components/Layout';
-
 import CartProducts from './CartProducts';
 import { CartContext } from '../../contexts/CartContext';
 import { formatNumber } from '../../helpers/utils';
 import { Link } from 'react-router-dom';
+import Check from '../../components/checkout'
 
 const Cart = () => {
+    
 
     const { total, cartItems, itemCount, clearCart, checkout, handleCheckout } = useContext(CartContext);
     
@@ -30,7 +31,9 @@ const Cart = () => {
 
                         { checkout && 
                             <div className="p-3 text-center text-success">
-                                <p>Checkout successfull</p>
+                                <p>Checkout successful</p>
+                                <div><Check/></div>
+                                
                                 <Link to="/" className="btn btn-outline-success btn-sm">BUY MORE</Link>
                             </div>
                         }
